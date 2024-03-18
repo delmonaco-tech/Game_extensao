@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+  <div id="startScreen">
+    <div class="content">
+      <h1>Jornada Binária - Quiz Game</h1>
+      <input type="text" id="usernameInput" placeholder="Insira seu User Name">
+      <br><br>
+      <button id="startBtn">Start</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("startBtn").onclick = function () {
+      var username = document.getElementById("usernameInput").value;
+      window.location.href = "index.html?username=" + encodeURIComponent(username);
+    };
+  </script>
+
+</body>
+
+</html>
